@@ -24,7 +24,8 @@ table > thead > tr > th {
 
 table > tbody > tr > td {
   border: 1px solid #999;
-  padding: 0.2rem;
+  padding: 0.3rem .8rem;
+  white-space: nowrap;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td {
@@ -43,7 +44,15 @@ table > tbody > tr > td {
 }
 
 .main-container{
-    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner-inner{
+    width: 1170px;
+    max-width: 100%;
     margin: 0 auto;
     clear: both;
 }
@@ -116,6 +125,7 @@ table > tbody > tr > td {
 
 .table-container{
     opacity: 0;
+    visibility: hidden;
     transition: all .3s ease-in;
 }
 
@@ -138,7 +148,15 @@ table > tbody > tr > td {
 }
 
 .table-container.shown{
+    visibility: visible;
     opacity: 1;
+}
+
+.table-wrap{
+    max-height: calc(100vh - 300px);
+    max-width: 100%;
+    overflow: auto;
+    padding: 10px;
 }
 
 

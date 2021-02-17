@@ -11,25 +11,27 @@
 </head>
 <body>
    <main class="main-container">
-        <h1>CSV to XML converter</h1>
-        
-        <!-- File upload container -->
-        <div class="upload-wrapper">
-            <div class="select-file-wrap">
-                <h2>Plese select your csv file</h2>
-                <div class="select-file">
-                    <input type="file" id="fileUpload" />
-                    <img src="icon/svg-cloud-and-upload-icon-1.svg" alt="Upload icon">
+       <div class="conteiner-inner">
+            <h1>CSV to XML Converter</h1>
+
+            <!-- File upload container -->
+            <div class="upload-wrapper">
+                <div class="select-file-wrap">
+                    <h2>Plese select your csv file</h2>
+                    <div class="select-file">
+                        <input type="file" id="fileUpload" />
+                        <img src="icon/svg-cloud-and-upload-icon-1.svg" alt="Upload icon">
+                    </div>
                 </div>
+                <input class="btn upload-btn" type="button" id="upload" value="Upload your selected file" />
             </div>
-            <input class="btn upload-btn" type="button" id="upload" value="Upload your selected file" />
-        </div>
-        <!-- //End file upload container -->
-        
-        <!-- Table container -->
-        <div class="table-container">
-            <div id="dvCSV"></div>
-            <button id="exportXml" class="download btn">Download as XML</button>
+            <!-- //End file upload container -->
+
+            <!-- Table container -->
+            <div class="table-container">
+                <div id="dvCSV" class="table-wrap"></div>
+                <button id="exportXml" class="download btn">Download as XML</button>
+            </div>
         </div>
     </main>
 </body>
