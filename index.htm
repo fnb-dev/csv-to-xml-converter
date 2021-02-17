@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Convert CSV to XML</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="js/tableExport.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <main class="main-container">
+        <h1>CSV to XML converter</h1>
+        
+        <!-- File upload container -->
+        <div class="upload-wrapper">
+            <div class="select-file-wrap">
+                <h2>Plese select your csv file</h2>
+                <div class="select-file">
+                    <input type="file" id="fileUpload" />
+                    <img src="icon/svg-cloud-and-upload-icon-1.svg" alt="Upload icon">
+                </div>
+            </div>
+            <input class="btn upload-btn" type="button" id="upload" value="Upload your selected file" />
+        </div>
+        <!-- //End file upload container -->
+        
+        <!-- Table container -->
+        <div class="table-container">
+            <div id="dvCSV"></div>
+            <button id="exportXml" class="download btn">Download as XML</button>
+        </div>
+    </main>
+</body>
+</html>
