@@ -75,11 +75,11 @@ function DoOnAfterSaveToFile (data, fileName, type, charset, encoding) {
 
             //alert($('#xmltable').text());
             doExport('#xmltable', {
-                type:'xml',
-//                mso: {
-//                    fileFormat:'xmlss',
-//                    worksheetName: ['Table 1','Table 2', 'Table 3']
-//                }
+                type:'excel',
+                mso: {
+                    fileFormat:'xmlss',
+                    worksheetName: ['Table 1','Table 2', 'Table 3']
+                }
             });
             $('.upload-wrapper').show();
             $('.table-container').removeClass('shown');
